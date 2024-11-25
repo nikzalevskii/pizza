@@ -17,7 +17,7 @@ export class AuthInterceptor implements HttpInterceptor {
       tap({
         next: (event) => {
           if (event instanceof HttpResponse) {
-            console.log(event);
+            // console.log(event);
           }
         }
       })

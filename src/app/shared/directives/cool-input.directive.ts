@@ -35,8 +35,7 @@ export class CoolInputDirective implements OnInit {
 
   @HostListener('click', ['$event', '$event.target'])
   onClick(event:Event, target: HTMLElement) {
-    console.log(event);
-    console.log(target);
+
   }
 
   ngOnInit() {

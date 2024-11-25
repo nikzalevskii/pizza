@@ -30,16 +30,13 @@ export class MainComponent implements OnInit, OnDestroy, AfterViewInit {
   private subscription: Subscription | null = null;
 
   ngOnInit() {
-    console.log(environment.production);
 
     this.subscription = this.subject
       .subscribe(
       {
         next: (param: number) => {
-          console.log('subscriber 1: ', param);
         },
         error: (error: string) => {
-          console.log('ERROR!!! ' + error);
         }
       }
     );
@@ -50,7 +47,6 @@ export class MainComponent implements OnInit, OnDestroy, AfterViewInit {
 
   ngAfterViewInit() {
     // this.popupComponent.open();
-    console.log('hello');
   }
 
   ngOnDestroy() {
@@ -66,7 +62,6 @@ export class MainComponent implements OnInit, OnDestroy, AfterViewInit {
         })
       )
       .subscribe((param: string) => {
-      console.log('subscriber 2: ', param);
     });
   }
 
