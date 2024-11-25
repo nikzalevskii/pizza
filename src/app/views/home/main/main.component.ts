@@ -50,6 +50,7 @@ export class MainComponent implements OnInit, OnDestroy, AfterViewInit {
 
   ngAfterViewInit() {
     // this.popupComponent.open();
+    console.log('hello');
   }
 
   ngOnDestroy() {
